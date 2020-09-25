@@ -1,0 +1,55 @@
+
+/*Define cor, fonte e tamanho para o h1*/
+h1 {
+    color: rgb(201, 226, 243);
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 10px;
+    font-size: 350%;
+  }
+  /*Define cor, fonte e tamanho para o h2 e h3*/
+  h2, h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+  /*Define fonte, preenchimento, tipo de 'box', cor de fundo, curvatura de borda e 
+    margem para hyperlinks em 'nav'*/
+  nav a {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic, oblique;
+    padding: 20px 40px;
+    text-decoration: none;
+    margin-top: -20px;
+    display: inline-block;
+    background-color: rgb(116, 97, 245);
+    border-radius: 10px;
+    margin-right: 5px;
+  }
+  /*Define cor de fonte para hyperlinks que ja foram selecionados*/
+  nav a:visited, a:link {
+    color: #ffffff;
+  }
+  /*Define cor de fonte e cor de fundo para hyperlinks ao ter o cursor do mouse apontando para ele*/
+  nav a:hover {
+    color: white;
+    background-color: rgb(13, 2, 53);
+  }
+  /*Define cor de fonte para hyperlinks no momento do clique*/
+  nav a.active {
+    color: #06001b;
+  }
+  /*Define margem  e cor de fundo para o HTML*/
+  html {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    
+  }
+  /*Define cor e fonte para  Body, caixa de texto e button */
+  body, input[type="text"], button {
+    color: #333;
+    font-family: Cambria, Georgia;
+  }
+  /* Define fonte para outros elementos que não foram definidos acima */
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }

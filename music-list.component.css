@@ -1,0 +1,75 @@
+h2{
+    color: rgb(201, 226, 243);
+    font-family: 'Courier New', Courier, monospace;
+    margin-left:12px;
+  }
+/* Define margem, estilo de lista, preenchimento e largura para 'musicas' */
+  .musicas {
+    color: white;
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  /* Define estilo do cursor(mouse) ao apontar para o item, posição, cor de fundo, margem, preenchimento, 
+  largura, altura e curvatura de borda para 'musicas' em uma lista */
+  .musicas li {
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: rgb(116, 97, 245);
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 10px;
+  }
+  /* Define cor do item, cor de fundo e move o item para a esquerda quando o cursor(mouse)
+    apontar para 'musicas' em uma lista */
+  .musicas li:hover {
+    color: #607D8B;
+    background-color: rgb(13, 2, 53);
+    left: .1em;
+  }
+  /* Define cor do item e cor de fundo quando o item for selecionado para 'musicas' em uma lista */
+  .musicas li.selected {
+    background-color: #CFD8DC;
+    color: white;
+  }
+  /* Define cor do item e cor de fundo quando o cursor(mouse) apontar para o item para 'musicas' 
+    em uma lista */
+  .musicas li.selected:hover {
+    background-color: #BBD8DC;
+    color: white;
+  }
+  /* Define o tipo de bloco, fonte, cor, preenchimento, cor de fundo, altura da linha, posição,
+    margem,  e curvatura de borda para a classe 'badge' em 'musicas' */
+  .musicas .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: rgb(13, 2, 53);
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 5px;
+  }
+  /* Define cor, posição, tipo de caixa(block) e largura para hyperlinks de 'musicas'*/
+  .musicas a {
+    color: rgb(255, 250, 250);
+    text-decoration: none;
+    position: relative; 
+    display: block;
+    width: 250px;
+    
+  }
+  /* Define a cor do hyperlink quando o cursor(mouse) apontar para 'musicas' */
+  .musicas a:hover {
+    color:#ffffff;
+    
+  }

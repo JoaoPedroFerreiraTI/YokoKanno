@@ -1,0 +1,50 @@
+  /*Define cor de texto, modo de exibição, largura e magem para 'label'*/
+  label {
+    color: white;
+    display: inline-block;
+    width: 3em;
+    margin: .5em 0;
+    
+  }
+/*Define tamanho da fonte, modo de exibição, altura e magem para 'input'*/
+  input {
+    
+    display: inline-grid;
+    height: 2em;
+    font-size: 1em;
+    margin-right: 10px;
+    
+  }
+/*Define cor de texto, cor de fundo, margem para o topo, fonte, preenchimento, variação de cursor
+  e curvatura de borda para 'button'*/
+  button {
+    color: #eee;
+    margin-top: 20px;
+    font-family: Arial;
+    background-color:rgb(24, 46, 146);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  /*Define cor de fundo de 'button' quando estiver selecionado */
+  button:hover {
+    background-color: #020080;
+  }
+/*Define cor de texto, cor de fundo e variação de cursor de 'button' quando estiver desabilitado */
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+/*Define cor de texto, cor de fundo, preenchimento, margem apra o topo, modo de exibição
+  e curvatura de borda da classe 'purpleblock */
+  .purpleblock{
+    color: #eee;
+    padding: 15px 60px;
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-grid;
+    background-color: rgb(116, 97, 245);
+    border-radius: 10px;
+  }

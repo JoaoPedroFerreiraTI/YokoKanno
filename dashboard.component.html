@@ -1,0 +1,12 @@
+<!--Escreve 'Top Músicas' em header 3-->
+<h3>Top Músicas</h3>
+<!--Uma div da classe 'grid grid-pad' com um hyperlink em uma coluna de escala 1-4 com um hyperlink
+   para o id da música e o nome da música -->
+   <div class="grid grid-pad">
+    <a *ngFor="let music of musicas" class="col-1-4"
+        routerLink="/detail/{{music.Id}}">
+      <div class="module">
+        <h4>{{music.Nome}}</h4>
+      </div>
+    </a>
+  </div>

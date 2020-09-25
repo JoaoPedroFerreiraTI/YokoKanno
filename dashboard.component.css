@@ -1,0 +1,94 @@
+
+  /*Define fonte para 'a'(Hyperlinks)*/
+  a {
+    font-style: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+  }
+
+  /*Define  cor, tamanho, alinhamento e fonde de texto para header 3*/
+  h3 {
+    color: rgb(201, 226, 243);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  /*Define posução de header 4*/
+  h4 {
+    position: relative;
+  }
+  
+  /*Define margem para a classe 'grid'*/
+  .grid {
+    margin: 0;
+  }
+  
+  /*Define largura para a classe 'col 1-4'*/
+  .col-1-4 {
+    width: 25%;
+  }
+  
+  /*Define preenchimento, alinhamento e cor de texto, altura maxima, largura minima, 
+    cor de fundo e curvatura de borda para a classe 'module'*/
+  .module {
+    padding: 20px;
+    text-align: center;
+    color: #eee;
+    max-height: 120px;
+    min-width: 120px;
+    background-color: rgb(116, 97, 245);
+    border-radius: 10px;
+  }
+
+  /*Define cor de fundo ,cor de texto e variação de cursor para a classe 'module' quando
+    o cursor do mouse estiver apontando para*/
+  .module:hover {
+    background-color: rgb(13, 2, 53);
+    cursor: pointer;
+    color: white
+  }
+  /*Define preenchimento para a classe 'grid-pad'*/
+  .grid-pad {
+    padding: 10px 0;
+  }
+   /*Define preenchimento para a direita para a classe 'grid-pad' dentro da classe
+    '[class*='col-']:last-of-type' */
+  .grid-pad > [class*='col-']:last-of-type {
+    padding-right: 20px;
+  }
+
+  /*Diminui a fonte e a altura da classe 'module' quando a tela do browser
+    tiver o tamanho de 600px ou menor*/
+  @media (max-width: 600px) {
+    .module {
+      font-size: 10px;
+      max-height: 75px; }
+  }
+  
+  /*Diminui a margem da classe 'grid' e a largura da classe 'module' quando a tela do browser
+    tiver o tamanho de 1024px ou menor*/
+  @media (max-width: 1024px) {
+    .grid {
+      margin: 0;
+    }
+    .module {
+      min-width: 60px;
+    }
+  }
+
+
+  [class*='col-'] {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  [class*='col-']:last-of-type {
+    padding-right: 0;
+  }
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }

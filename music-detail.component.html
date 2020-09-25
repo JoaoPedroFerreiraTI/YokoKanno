@@ -1,0 +1,15 @@
+<!--Uma div da classe 'purpleblock'-->
+<div class="purpleblock" *ngIf="music">
+    <!--Exibe o nome da música com letras maiúsculas-->
+    <h2>Música: {{music.Nome | uppercase}}</h2>
+    <!--Exibe o Id da música -->
+    <div><span>Id:</span>{{music.Id}}</div>
+    <!--Permite que o usuario mude o nome da musica-->    
+    <div>
+        <label>Nome:
+            <input [(ngModel)]="music.Nome" placeholder="Nome"/>
+        </label>
+    </div>
+    <!--Um 'button' com que utiliza o método 'goBack'-->
+    <button (click)="goBack()">Voltar</button>
+</div>

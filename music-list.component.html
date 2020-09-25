@@ -1,0 +1,15 @@
+<!--Exibe 'Lista de Músicas' em header 2-->
+<h2>Lista de Músicas</h2>
+<!--Exibe uma lista não ordenada com a classe 'musicas'-->
+<ul class="musicas">
+    <!--Lista a 'musica' atual na lista 'musica' e permite que o usuário mude a 
+        musica selecionado com um clique-->
+    <li *ngFor="let music of musicas" >
+        <a routerLink="/detail/{{music.Id}}" >
+            <!--Um span com a classe badge(que cria um ponto preto), que exibe o id e nome  
+                da musica-->
+            <span class="badge">{{music.Id}}</span> {{music.Nome}}
+        </a>
+    </li>
+    
+</ul>

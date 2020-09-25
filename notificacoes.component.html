@@ -1,0 +1,11 @@
+<!--Uma div que exibe 'Notificações' em header 2, logo abaixo um botão 'Limpar notificações' que remove
+    a area de notificações, e por ultimo uma div da classe 'purplelist', que lista as notificações
+    do serviço de notificações -->
+    <div *ngIf="notificacaoService.messages.length">
+
+        <h2>Notificações</h2>
+        <button class="clear"
+                (click)="notificacaoService.clear()">Limpar notificações</button>
+        <div class="purplelist" *ngFor='let message of notificacaoService.messages'> {{message}} </div>
+      
+      </div>

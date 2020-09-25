@@ -1,0 +1,50 @@
+/*Define margem a esquerda, cor de texto e fonte para header 2*/
+h2{
+    margin-left: 12px;
+    color: rgb(201, 226, 243);
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /*Define cor de texto, margem ao topo, fonte, cor de fundo, preenchimento, curvatura de borda 
+    e variação de cursos de 'button'*/
+  button {
+      color: rgb(255, 255, 255);
+      margin-top: 3px;
+      font-family: Arial;
+      background-color: rgb(116, 97, 245);
+      
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    /*Define cor de fundo de 'button' quanto estiver selecionado*/
+    button:hover {
+      background-color: rgb(13, 2, 53);
+    }
+    
+    /*Define cor de fundo, cor de texto e variação de cursor quando 'button' estiver desabilitado*/
+    button:disabled {
+      background-color: #eee;
+      color: #cfd8dc;
+      cursor: auto;
+    }
+    
+    /*Define cor de texto, preenchimento, margem para topo, diteita e fundo, modo de exibição,
+      cor de fundo e curvatura de borda para a classe 'purplelist' */ 
+    .purplelist{
+      color: #eee;
+      padding: 5px 20px;
+      text-decoration: none;
+      margin-top: 5px;
+      
+      margin-right: 990px;
+      margin-bottom: 5px;
+      display: inline-grid;
+      background-color: rgb(116, 97, 245);
+      border-radius: 10px;
+      
+    }
+  
+    
